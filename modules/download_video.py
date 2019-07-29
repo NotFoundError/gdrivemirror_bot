@@ -37,7 +37,7 @@ def download(url):
 
 	if("youtube" in url or "youtube" in url):
 		ydl_opts = {
-		'format': 'bestvideo[height<=1080]',
+		'format': 'bestvideo[height<=480]',
 		'outtmpl': unicode(filename),
 	    	'logger': MyLogger(),
 		'progress_hooks': [my_hook],
